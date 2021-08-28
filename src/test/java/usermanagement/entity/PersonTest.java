@@ -20,4 +20,18 @@ public class PersonTest {
 		assertEquals("lName1", testClass.getlName());
 	}
 
+	@Test
+	public void test_person_id() {
+		Person person = new Person();
+		person.setPersonId(5);
+		assertEquals(5, person.getPersonId());
+	}
+
+	@Test
+	public void test_person_company() {
+		Person person = new Person();
+		person.setCompanyName("test_name");
+		assertEquals("test_name", person.getCompanyName());
+	}
+
 }
